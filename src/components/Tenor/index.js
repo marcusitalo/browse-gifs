@@ -26,7 +26,7 @@ class Tenor extends React.Component {
       }
   
     componentDidMount() {
-      fetch("http://api.tenor.com/v1/search?q="+this.state.word)
+      fetch("https://api.tenor.com/v1/search?q="+this.state.word)
         .then(res => res.json())
         .then(
           (result) => {
